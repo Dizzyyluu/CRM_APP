@@ -10,6 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-l6h)5aq-5x1_bc+4a=cmdico@5!mr=tvr^i&n(9d*cw@d7k3l0"
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -27,7 +28,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     'webapp',
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
